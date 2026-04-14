@@ -1,0 +1,55 @@
+{
+  "ad_id": "457142525",
+  "url": "https://www.finn.no/job/ad/457142525",
+  "title": "Full-stack AI Engineer",
+  "company": "DN Media Group AS",
+  "company_url": "",
+  "location": "",
+  "deadline": "ASAP",
+  "date_posted": "",
+  "date_modified": "2026-03-24",
+  "description": "Legg til som favoritt.\nDele ikon\nFull-stack AI Engineer\nDN Media Group AS\nFrist\nSnarest\nAnsettelsesform\nFast\nDo you want to build AI solutions for the future of journalism?\nAt DN Media Group, we create products and solutions that make our journalism shine and provide our readers with the insight they need to make better decisions.\nWe believe AI will transform how journalism is created, distributed and experienced, from improving editorial workflows to enabling investigative teams to uncover stories that were previously out of reach.\nWe are now looking for a full-stack engineer for our newly established\nEditorial AI team\n. As a core member, you will play a key role in shaping how AI is applied across the organization, combining hands-on development with real influence on DN Media Group’s strategy and direction.\nYou will work on a diverse set of problems, from supporting investigative journalism to building new AI-driven content experiences.\nOur tech approach (evolving)\nWe are building a modern AI stack and continuously evaluating the best tools for the job.\nYou will shape how we experiment with and scale AI solutions, using state-of-the-art AI tooling, APIs and cloud-based services.\nYour strategic role:\nExplore how frontier AI technologies can create real value for journalists and readers.\nContribute to shaping our editorial AI strategy in close collaboration with Data & Insights and Product & Technology.\nHelp build and improve the foundations for our editorial AI applications, including platforms, tooling and infrastructure.\nYour day-to-day tasks:\nDesign, build and deploy AI-powered applications across frontend and backend.\nWork end-to-end from ideation and prototyping to production and continuous improvement.\nIntegrate AI capabilities into user-facing products and workflows.\nDevelop APIs, services and data flows that power AI-driven features.\nBuild and automate workflows using AI agents and orchestration frameworks.\nEnsure systems are scalable, reliable and production-ready.\nCollaborate closely with engineers, product teams, data specialists, and editorial staff.\nYour background:\nStrong interest in modern AI and its practical applications.\nExperience building and shipping AI-enabled applications.\nStrong backend skills and experience designing API and services.\nExperience integrating AI technologies into real-world products.\nExperience deploying and operating services in cloud environments.\nSolid understanding of system design, scalability and performance.\nProficiency in\nPython\n(or similar backend language).\nExperience with databases and data modelling.\nStrong communication skills and proficiency in both Norwegian and English.\nBonus:\nInterest in systems-level languages such as Go, Rust or similar.\nFamiliarity with modern software development practices (testing, CI/CD, code quality).\nExperience from media, publishing, or content platforms.\nA relevant higher education is an advantage, but not a requirement.\nWe will consider applications even if you do not meet every single one of the above requirements, so do not be put off if you don’t match them perfectly!\nWe are an equal opportunities employer who wants to attract qualified applicants regardless to gender, religion, race, national or ethnic origin, cultural background, social group, disability, sexual orientation, gender identity, marital status, age or political opinion. Diversity is fundamental to our culture and we invite you to be part of this diversity!\nTradeWinds is part of DN Media Group, owner of Norwegian financial daily Dagens Naeringsliv and a portfolio of other specialist titles with a global reach. We pride ourselves on high standards of independent journalism and have an ambitious growth strategy. But don't take our word for it, take a look around our career pages and website to find out more about DN Media Group, its publications, and the team.\nAnd for what is on offer for you as a new colleague take a look at the People & Culture department at career pages.\nPlease note that as part of our recruitment process we conduct ID-checks and right to work checks, and when necessary, a full background check. Candidates will be informed by HR before any background checks are initiated.\nFerdigheter\nAI-generert\nAPI - integrasjoner\nBackend webutvikling\nData Modeling\nPython (dataprogrammering)\nOm arbeidsgiveren\nLeading publications in business, shipping, seafood and energy.\nSektor\n:\nPrivat\nSted\n:\nChr. Krohgs gate 16,\n0186\nOslo\nHjemmekontor\n:\nPå kontoret\nBransje\n:\nMedie- og innholdsproduksjon\nStillingsfunksjon\n:\nAI / Maskinlæring\n,\nFull stack utvikler\nNøkkelord\nFull-stack, AI, Journalism, Applications, Python\nSpørsmål om stillingen\nKontaktperson\n:\nBritt Aure Bugge\nStillingstittel\n:\nHead of Engineering\nMobil\n:\n47 41 65 16 26\nSend melding\nSend SMS\nKontaktperson\n:\nTom Martinsen\nStillingstittel\n:\nDirector HR Norway\nMobil\n:\n47 92 86 19 48\nSend melding\nSend SMS\nBli kjent med DN Media Group\nHjemmeside\nFlere stillinger fra DN Media Group\nFølg firma\n173 følger dette firmaet\nFirmaets beliggenhet\nChr. Krohgs gate 16,\n0186\nOslo\nAnnonseinformasjon\nFINN-kode\n457142525\nSist endret\n24.3.2026, 13:07\nRapporter annonse",
+  "json_ld": null,
+  "apply_method": {
+    "type": "unknown",
+    "url": "",
+    "email": ""
+  },
+  "analysis": {
+    "is_software_role": true,
+    "english_friendly": 0.5,
+    "sponsorship_likely": 0.7,
+    "practical_viability": 0.6,
+    "tech_stack": [
+      "Python",
+      "AI/ML",
+      "APIs",
+      "Cloud",
+      "Databases",
+      "Go",
+      "Rust"
+    ],
+    "required_skills": [
+      "AI application development",
+      "Backend development",
+      "API design",
+      "Cloud deployment",
+      "System design",
+      "Python",
+      "Database modeling",
+      "Norwegian language proficiency",
+      "English language proficiency"
+    ],
+    "nice_to_have_skills": [
+      "Go/Rust systems languages",
+      "Modern software practices (testing, CI/CD)",
+      "Media/publishing industry experience",
+      "Higher education"
+    ],
+    "experience_level": "mid",
+    "summary": "Full-stack AI engineering role at DN Media Group building AI solutions for journalism. Strong technical requirements but Norwegian language is explicitly required alongside English. Company is large enough to sponsor visas but language requirement creates a significant barrier.",
+    "why_foreigner_friendly": "DN Media Group is a large media company (100+ employees) with modern AI/tech stack and international publications, suggesting they have infrastructure for visa sponsorship. The role is highly technical with Python/AI focus, which typically prioritizes skills over language. However, the explicit requirement for Norwegian proficiency ('Strong communication skills and proficiency in both Norwegian and English') creates a major barrier for non-Norwegian speakers despite the company's size and technical nature.",
+    "requires_degree": "none"
+  },
+  "foreigner_score": 0.6
+}

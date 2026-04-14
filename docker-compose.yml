@@ -1,0 +1,55 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: newslens
+      POSTGRES_USER: newslens
+      POSTGRES_PASSWORD: newslens
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U newslens -d newslens"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql+asyncpg://newslens:newslens@db:5432/newslens
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      ANALYSIS_BATCH_SIZE: ${ANALYSIS_BATCH_SIZE:-5}
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/dashboard/stats')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+
+  ingester:
+    build: ./ingester
+    environment:
+      DATABASE_URL: postgres://newslens:newslens@db:5432/newslens?sslmode=disable
+      INGESTER_INTERVAL: ${INGESTER_INTERVAL:-900}
+      INGESTER_CONCURRENCY: ${INGESTER_CONCURRENCY:-10}
+    depends_on:
+      backend:
+        condition: service_healthy
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+
+volumes:
+  pgdata:
