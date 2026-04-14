@@ -395,7 +395,11 @@ async def run_research(
         messages.append({"role": "assistant", "content": response.content})
         messages.append({"role": "user", "content": tool_results})
 
-    task.status = "completed"
+    if task.result is not None:
+        task.status = "completed"
+    else:
+        task.status = "failed"
+        task.result = {"error": "Agent did not produce a research briefing"}
     task.completed_at = datetime.now(timezone.utc)
     await session.commit()
 

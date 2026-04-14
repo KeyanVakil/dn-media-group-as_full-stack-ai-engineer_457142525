@@ -49,7 +49,7 @@ async def create_research(
 
     background_tasks.add_task(_run_research_background, task.id)
 
-    return {"data": ResearchTaskResponse.model_validate(task).model_dump()}
+    return {"data": ResearchDetailResponse.model_validate(task).model_dump()}
 
 
 @router.get("")
