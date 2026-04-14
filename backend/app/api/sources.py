@@ -54,5 +54,5 @@ async def delete_source(source_id: UUID, session: AsyncSession = Depends(get_ses
     if not source:
         raise HTTPException(status_code=404, detail="Source not found")
 
-    await session.delete(source)
+    session.delete(source)
     await session.commit()

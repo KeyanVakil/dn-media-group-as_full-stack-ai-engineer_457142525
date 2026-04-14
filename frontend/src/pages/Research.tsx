@@ -150,7 +150,7 @@ export default function Research() {
                     <div className="mt-1.5 flex items-center gap-2">
                       <StatusDot status={task.status} />
                       <span className="text-xs text-ink-400">
-                        {new Date(task.created_at).toLocaleDateString("en-GB", {
+                        {new Date(task.created_at).toLocaleString("en-GB", {
                           day: "numeric",
                           month: "short",
                           hour: "2-digit",

@@ -73,6 +73,7 @@ export interface EntityDetail {
   id: string;
   name: string;
   type: EntityType;
+  description: string | null;
   article_count: number;
   articles: ArticleListItem[];
 }
@@ -131,10 +132,16 @@ export interface ResearchStep {
   output_data: Record<string, unknown> | null;
 }
 
+export interface EvidenceItem {
+  article_id: string;
+  title: string;
+  relevance: string;
+}
+
 export interface ResearchResult {
   briefing: string;
   key_findings: string[];
-  evidence: string[];
+  evidence: EvidenceItem[];
   follow_up_questions: string[];
 }
 

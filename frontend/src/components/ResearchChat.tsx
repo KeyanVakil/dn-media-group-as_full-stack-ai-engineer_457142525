@@ -30,7 +30,11 @@ export default function ResearchChat({ taskId, initialTask }: ResearchChatProps)
       },
       () => {
         // Stream ended -- fetch final state
-        fetchResearchTask(taskId).then(setTask).catch(() => {});
+        fetchResearchTask(taskId)
+          .then(setTask)
+          .catch(() => {
+            setTask((prev) => ({ ...prev, status: "failed" }));
+          });
       },
     );
 
@@ -118,8 +122,11 @@ export default function ResearchChat({ taskId, initialTask }: ResearchChatProps)
               <h4 className="text-sm font-semibold text-ink-700 mb-2">Evidence</h4>
               <ul className="space-y-1.5">
                 {task.result.evidence.map((ev, i) => (
-                  <li key={i} className="text-sm text-ink-500 italic">
-                    &ldquo;{ev}&rdquo;
+                  <li key={i} className="text-sm text-ink-500">
+                    <span className="font-medium text-ink-700 not-italic">{ev.title}</span>
+                    {ev.relevance && (
+                      <span className="italic ml-1">&mdash; {ev.relevance}</span>
+                    )}
                   </li>
                 ))}
               </ul>
